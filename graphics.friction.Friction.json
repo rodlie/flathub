@@ -1,0 +1,50 @@
+{
+    "app-id": "graphics.friction.Friction",
+    "runtime": "org.freedesktop.Sdk",
+    "runtime-version": "22.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "friction",
+    "finish-args": [
+            "--share=ipc",
+            "--socket=x11",
+            "--socket=pulseaudio",
+            "--filesystem=host",
+            "--device=dri"
+    ],
+    "modules": [
+        {
+            "name": "friction",
+            "buildsystem": "simple",
+            "build-commands": [
+                "mv Friction/* /app/",
+                "install -Dm644 graphics.friction.Friction.metainfo.xml /app/share/metainfo/graphics.friction.Friction.metainfo.xml",
+                "install -Dm644 graphics.friction.Friction.desktop /app/share/applications/graphics.friction.Friction.desktop",
+                "install -Dm644 /app/share/icons/hicolor/256x256/apps/friction.png /app/share/icons/hicolor/256x256/apps/graphics.friction.Friction.png",
+                "install -Dm644 /app/share/icons/hicolor/scalable/apps/friction.svg /app/share/icons/hicolor/scalable/apps/graphics.friction.Friction.svg",
+                "rm -f /app/friction",
+                "rm -f /app/share/icons/hicolor/*/apps/friction.png",
+                "rm -f /app/share/icons/hicolor/scalable/apps/friction.svg",
+                "rm -f /app/share/icons/hicolor/*/mimetypes/application-x-friction.png",
+                "rm -f /app/share/icons/hicolor/scalable/mimetypes/application-x-friction.svg",
+                "rm -f /app/share/applications/friction.desktop",
+                "rm -f /app/share/mime/packages/friction.xml"
+            ],
+            "sources": [
+                {
+                    "type": "archive",
+                    "url": "https://github.com/friction2d/friction/releases/download/v0.9.5-rc1/friction-0.9.5-dev-68f5ecb-portable-x86_64.tar.xz",
+                    "sha256": "6f748dc0cd8f90e45dba72ca9f0f05e7d0837fe589d9d85f300589360f32ed98",
+                    "dest": "./Friction"
+                },
+                {
+                    "type": "file",
+                    "path": "graphics.friction.Friction.metainfo.xml"
+                },
+                {
+                    "type": "file",
+                    "path": "graphics.friction.Friction.desktop"
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2023 Ole-André Rodlie -->
+<component type="desktop">
+  <id>graphics.friction.Friction</id>
+  <launchable type="desktop-id">graphics.friction.Friction.desktop</launchable>
+  <name>Friction</name>
+  <developer_name>Friction</developer_name>
+  <summary>Motion graphics software</summary>
+  <metadata_license>CC0-1.0</metadata_license>
+  <project_license>GPL-3.0-or-later</project_license>
+  <description>
+    <p>Friction, a free and open-source motion graphics software, empowers you to craft both vector and raster-based animations for web and video platforms. Its versatile and high performance rendering capabilities, spanning vector and raster graphics, enable the creation of smooth, scalable animations that effortlessly adapt to varying screen sizes and resolutions. Friction seamlessly handles a comprehensive range of input and output media formats.</p>
+  </description>
+  <releases>
+    <release date="2023-11-20" version="0.9.5-rc1"/>
+  </releases>
+  <screenshots>
+    <screenshot type="default">
+      <image>https://friction.graphics/assets/screenshots/friction-094-screenshot.jpg</image>
+      <caption>Friction user interface</caption>
+    </screenshot>
+  </screenshots>
+  <url type="homepage">https://friction.graphics</url>
+  <url type="bugtracker">https://github.com/friction2d/friction/issues</url>
+  <url type="help">https://friction.graphics/documentation/</url>
+  <update_contact>support@friction.graphics</update_contact>
+  <content_rating type="oars-1.1"/>
+  <keywords>
+    <keyword>2d</keyword>
+    <keyword>graphics</keyword>
+    <keyword>motiongraphics</keyword>
+    <keyword>animation</keyword>
+    <keyword>video</keyword>
+    <keyword>svg</keyword>
+    <keyword>vector</keyword>
+    <keyword>raster</keyword>
+  </keywords>
+</component>

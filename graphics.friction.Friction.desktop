@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=Friction
+Exec=friction
+Icon=graphics.friction.Friction
+Comment=Motion Graphics
+Terminal=false
+Type=Application
+Categories=Graphics;
